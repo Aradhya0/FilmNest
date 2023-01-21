@@ -35,21 +35,24 @@ body {
   -webkit-text-fill-color: transparent;
    width: fit-content;  */
    h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     letter-spacing: 0.9px;
-    background: linear-gradient(
+    font-weight: 1000;
+    color: rgba(0, 187, 255);
+
+    /* background: linear-gradient(
       90deg,
       rgba(0, 187, 255) 0%,
-      rgba(249, 211, 180, 0) 100%
-    );
-    background-clip: text;
+      rgba(249, 211, 180, 0) 100% */
+    /* ); */
+    /* background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: fit-content;
+    width: fit-content; */
   }
 
 .search {
-  width: 71%;
+  width: 60%;
   margin: 4rem 0 2rem;
 
   display: flex;
@@ -175,7 +178,7 @@ body {
 .movie div:nth-of-type(3) span {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 17px;
   letter-spacing: 2px;
   font-weight: 500;
   color: #00bbfe;
@@ -185,6 +188,7 @@ body {
   margin-top: 5px;
   font-family: "Roboto Slab", serif;
   color: #00fff7;
+  font-weight: 500;
   
 }
 

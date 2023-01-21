@@ -3,7 +3,7 @@ import './App.css';
 import SearchIcon from './search.svg';
 import MovieCard from './MovieCard';
 
-const API_URL = 'http://www.omdbapi.com?apikey=6d78bbcb';
+const API_URL = 'http://www.omdbapi.com?apikey=47c1e162';
 // const movie1 = {
   
 //     "Title": "The Amazing Spiderman 2 Webb Cut",
@@ -16,7 +16,6 @@ const API_URL = 'http://www.omdbapi.com?apikey=6d78bbcb';
 const App = () => {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-
   const searchMovies = async (title) => {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
@@ -25,11 +24,10 @@ const App = () => {
   }
 
   useEffect(() => {
-    searchMovies('Spiderman');
+    searchMovies('Superman');
   },[])
 
   const handleKey = (e)=>{
-    // console.log(e.key)
     if(e.key==='Enter'){
       searchMovies(searchTerm)
     }
